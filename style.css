@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+:root {
+  --color-text: #ffffff;
+
+  --color-grey: #272727;
+
+  --color-blue: #067bc2;
+
+  --color-black: #291f1e;
+
+  --color-greygtp: #343541;
+
+  --color-title: #067bc2;
+
+  /*----------- dark mode ----------------*/
+
+  --color-white1: #e5e5e5;
+
+  --color-white2: #edede9;
+
+  --color-white3: #edf2f4;
+
+  --color-white4: #ced4da;
+}
+
+body {
+  background-color: var(--color-blue);
+}
+main {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.branch_1 {
+  background-color: var(--color-grey);
+  color: var(--color-text);
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.branch_2 {
+  background-color: var(--color-greygtp);
+  color: var(--color-text);
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+.branch {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img_perfil {
+  display: flex;
+  justify-content: center;
+}
+
+.img_perfil img {
+  margin-top: -75px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  border: 5px solid #666;
+}
+
+.title {
+  color: var(--color-title);
+  font-size: 2rem;
+}
+
+.name_div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 2rem;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.name_div .name {
+  font-size: 4rem;
+}
+
+.title {
+  margin-left: 20px;
+}
+
+hr {
+  border: 2px solid white;
+  width: 100%;
+}
+
+.about_me p {
+  text-align: center;
+}
+
+.contacto a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.idiomas {
+  padding-bottom: 2rem;
+}
+
+.carrera_cursos {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.efe_hover {
+  transition: transform 0.5s ease;
+}
+.efe_hover:hover {
+  transform: scale(1.02);
+}
+
+.proyectos {
+  padding-bottom: 2rem;
+}
+
+.carrera_cursos a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.proyectos a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+/*------------------------------------------*/
+
+.sun,
+.moon {
+  cursor: pointer;
+}
+
+.moon {
+  display: none;
+}
+
+body.dark-mode .sun {
+  display: none;
+}
+
+body.dark-mode .moon {
+  display: block;
+}
+
+.color-mode {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+body.dark-mode .branch_1 {
+  background-color: var(--color-white4);
+  color: black;
+}
+
+body.dark-mode .branch_2 {
+  background-color: var(--color-white1);
+  color: black;
+}
+
+body.dark-mode a {
+  color: black;
+}
+
+body.dark-mode hr {
+  border: 2px solid black;
+}
+
+.bi {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+
+/*--------------------------------------*/
+
+.modal-body img {
+  width: 420px;
+  transition: transform 0.5s ease;
+  border-radius: 5px;
+}
+
+.modal-body img:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  transform: scale(1.02);
+}
+
+.proyectos li {
+  margin-bottom: 1rem;
+}
+
+/*-------- MEDIA QUERIES --------*/
+
+@media screen and (max-width: 1100px) {
+  main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .branch_1,
+  .branch_2 {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .img_perfil img {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .name_div {
+    font-size: 20px;
+  }
+
+  .name_div .name {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  main {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .title_conocimientos {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  
+
+.title {
+  margin-left: 5px;
+}
+
+ol, ul {
+  padding-left: 0rem;
+}
+
+
+.img_perfil img {
+  margin-top: -20px;
+  
+}
+
+}
+
+
+
+/*medidas standar*/
+
+/*tablet*/
+@media screen and (max-width: 768px) {
+}
+
+/*mobile*/
+@media screen and (max-width: 576px) {
+}
+
+/*----------------------------------------------*/
