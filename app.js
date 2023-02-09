@@ -5,8 +5,6 @@ botonColorMode.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
 })
 
-
-
 //---------------------------------------------------------//
 
 

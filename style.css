@@ -12,7 +12,8 @@
 
   --color-grey: #272727;
 
-  --color-blue: #067bc2;
+  /* --color-blue: #067bc2; */
+  --color-blue: #0090c1;
 
   --color-black: #291f1e;
 
@@ -157,7 +158,7 @@ ul {
   color: var(--color-text);
 }
 
-/*------------------------------------------*/
+/*-----------------------buttom dark/light mode-------------------*/
 
 .sun,
 .moon {
@@ -176,10 +177,15 @@ body.dark-mode .moon {
   display: block;
 }
 
+body {
+  margin-top: 2rem;
+}
+
 .color-mode {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  margin: 2rem;
+  align-items: center;
+  height: 10vh;
 }
 
 body.dark-mode .branch_1 {
@@ -376,8 +382,6 @@ body.dark-mode hr {
 
 /*medidas standar*/
 
-
-
 /*----------------------------------------------*/
 
 .buton_cv {
@@ -393,7 +397,12 @@ body.dark-mode hr {
   margin-right: 40%;
 }
 
-.buton_cv a {
+/* .buton_cv a {
+  text-decoration: none;
+  color: var(--color-white1) !important;
+} */
+
+.buton_a {
   text-decoration: none;
   color: var(--color-white1) !important;
 }
@@ -424,4 +433,10 @@ body.dark-mode hr {
     margin-left: 20%;
     margin-right: 20%;
   }
+}
+
+.container_buttom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
